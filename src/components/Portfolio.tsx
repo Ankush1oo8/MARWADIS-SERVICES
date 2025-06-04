@@ -33,14 +33,14 @@ const Portfolio = () => {
     }
   ];
 
-  // Animation variants for fade-in upwards
+  // Animation variants for fade-in and left-to-right slide
   const cardVariants = {
-    hidden: { y: 50, opacity: 0 },
+    hidden: { x: -50, opacity: 0 },
     visible: (i) => ({
-      y: 0,
+      x: 0,
       opacity: 1,
       transition: {
-        delay: i * 0.2, // Stagger each card by 0.2s
+        delay: i * 0.2,
         duration: 0.6,
         ease: "easeOut"
       }

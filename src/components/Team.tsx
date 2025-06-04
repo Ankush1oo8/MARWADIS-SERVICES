@@ -42,7 +42,7 @@ const Team = () => {
       y: 0,
       opacity: 1,
       transition: {
-        delay: i * 0.2, // Stagger each card by 0.2s
+        delay: i * 0.2,
         duration: 0.6,
         ease: "easeOut"
       }

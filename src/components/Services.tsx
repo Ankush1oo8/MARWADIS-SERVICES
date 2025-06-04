@@ -41,14 +41,14 @@ const Services = () => {
     }
   ];
 
-  // Animation variants for fade-in upwards
+  // Animation variants for fade-in and scale-up
   const cardVariants = {
-    hidden: { y: 50, opacity: 0 },
+    hidden: { scale: 0.9, opacity: 0 },
     visible: (i) => ({
-      y: 0,
+      scale: 1,
       opacity: 1,
       transition: {
-        delay: i * 0.2, // Stagger each card by 0.2s
+        delay: i * 0.2,
         duration: 0.6,
         ease: "easeOut"
       }
