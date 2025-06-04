@@ -1,5 +1,5 @@
-
 import { Code, Smartphone, Globe, Database, Cloud, Shield } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Services = () => {
   const services = [
@@ -41,6 +41,20 @@ const Services = () => {
     }
   ];
 
+  // Animation variants for fade-in upwards
+  const cardVariants = {
+    hidden: { y: 50, opacity: 0 },
+    visible: (i) => ({
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: i * 0.2, // Stagger each card by 0.2s
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    })
+  };
+
   return (
     <section className="py-24 bg-gray-950">
       <div className="container mx-auto px-6">
@@ -55,8 +69,13 @@ const Services = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
-            <div 
+            <motion.div
               key={index}
+              custom={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={cardVariants}
               className="bg-black border border-gray-800 rounded-2xl p-8 hover:border-gray-600 transition-all duration-300 hover:transform hover:scale-105 group"
             >
               <div className="bg-gray-900 p-4 rounded-xl w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-gray-800 transition-colors">
@@ -74,7 +93,7 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

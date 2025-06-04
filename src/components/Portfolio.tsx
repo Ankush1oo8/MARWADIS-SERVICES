@@ -1,5 +1,6 @@
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   const projects = [
@@ -32,6 +33,20 @@ const Portfolio = () => {
     }
   ];
 
+  // Animation variants for fade-in upwards
+  const cardVariants = {
+    hidden: { y: 50, opacity: 0 },
+    visible: (i) => ({
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: i * 0.2, // Stagger each card by 0.2s
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    })
+  };
+
   return (
     <section id="projects" className="py-24 bg-black">
       <div className="container mx-auto px-6">
@@ -46,8 +61,13 @@ const Portfolio = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {projects.map((project, index) => (
-            <div 
+            <motion.div
               key={index}
+              custom={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={cardVariants}
               className="group bg-gray-900 rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 border border-gray-800 hover:border-gray-600"
             >
               <div className="relative overflow-hidden">
@@ -121,11 +141,18 @@ const Portfolio = () => {
                   )}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
           
           {/* See More Projects Card */}
-          <div className="group bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 hover:border-gray-500 transition-all duration-300 hover:transform hover:scale-105 flex flex-col items-center justify-center p-8 text-center min-h-[400px]">
+          <motion.div
+            custom={projects.length}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={cardVariants}
+            className="group bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 hover:border-gray-500 transition-all duration-300 hover:transform hover:scale-105 flex flex-col items-center justify-center p-8 text-center min-h-[400px]"
+          >
             <div className="bg-gray-700 p-4 rounded-full mb-6 group-hover:bg-gray-600 transition-colors">
               <ArrowRight className="h-8 w-8 text-white" />
             </div>
@@ -133,14 +160,16 @@ const Portfolio = () => {
             <p className="text-gray-400 mb-6 leading-relaxed">
               Discover our complete portfolio of innovative solutions and successful client implementations.
             </p>
-            <Button 
-              variant="outline" 
-              className="border-gray-600 text-gray-300 hover:bg-white hover:text-black"
-            >
-              View All Projects
-              <ArrowRight className="h-4 w-4 ml-2" />
-            </Button>
-          </div>
+            <a href="/projects">
+              <Button 
+                variant="outline" 
+                className="border-gray-600 text-gray-300 hover:bg-white hover:text-black"
+              >
+                View All Projects
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </Button>
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>
