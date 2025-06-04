@@ -9,7 +9,7 @@ const Portfolio = () => {
       category: "FinTech Solution",
       description: "Secure offline payment processing system enabling transactions without internet connectivity using advanced encryption.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      tech: ["React", "Node.js", "Blockchain", "NFC"],
+      tech: ["Flutter", "Node.js", "Firebase", "USSD"],
       link: "https://github.com/Ankush1oo8/OFFPAY",
       github: "https://github.com/Ankush1oo8/OFFPAY"
     },
@@ -18,7 +18,7 @@ const Portfolio = () => {
       category: "Social Platform",
       description: "Community-driven travel platform where users share experiences, tips, and discover new destinations worldwide.",
       image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop",
-      tech: ["Next.js", "MongoDB", "AWS S3", "Maps API"],
+      tech: ["Next.js", "MongoDB", "AWS S3", "mongo DB"],
       link: "https://major-project-z4v3.onrender.com/listings",
       github: "https://github.com/Ankush1oo8/Project"
     },
@@ -26,8 +26,8 @@ const Portfolio = () => {
       title: "E-Commerce Medicine App",
       category: "Healthcare Platform",
       description: "Digital pharmacy platform with prescription management, medicine delivery, and telemedicine consultation features.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
-      tech: ["React Native", "PostgreSQL", "Stripe", "Firebase"],
+      image: "https://www.letsnurture.com/wp-content/themes/letsnutrure/img/mobile-app-01.png",
+      tech: ["Flutter", "Firebase", "mongo DB", "Firebase store"],
       link: "#",
       github: "#"
     }
@@ -103,7 +103,7 @@ const Portfolio = () => {
             <div className="bg-gray-700 p-4 rounded-full mb-6 group-hover:bg-gray-600 transition-colors">
               <ArrowRight className="h-8 w-8 text-white" />
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-white">See More Projects</h3>
+            <h3 className="text-2xl font-bold mb-4 text-black">See More Projects</h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Discover our complete portfolio of innovative solutions and successful client implementations.
             </p>
