@@ -1,6 +1,5 @@
 import { ArrowRight, Code, Smartphone, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -26,7 +25,7 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <Link href="#projects">
+            <a href="#projects">
               <Button
                 size="lg"
                 className="bg-white text-black hover:bg-gray-200 text-lg px-8 py-4 group transition-all duration-300 hover:scale-105"
@@ -34,8 +33,8 @@ const Hero = () => {
                 View Our Work 
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-            </Link>
-            <Link href="#contact">
+            </a>
+            <a href="#contact">
               <Button
                 variant="outline"
                 size="lg"
@@ -43,7 +42,7 @@ const Hero = () => {
               >
                 Start Your Project
               </Button>
-            </Link>
+            </a>
           </div>
           
           {/* Feature Icons */}
