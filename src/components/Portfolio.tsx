@@ -81,7 +81,7 @@ const Portfolio = () => {
                   <Button 
                     size="sm" 
                     variant="outline" 
-                    className="border-gray-600 text-black-800 hover:bg-white hover:text-black flex-1"
+                    className="border-gray-600 text-black hover:bg-white hover:text-black flex-1"
                   >
                     <ExternalLink className="h-4 w-4 mr-2" />
                     Live Demo
