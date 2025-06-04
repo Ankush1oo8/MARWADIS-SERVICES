@@ -17,7 +17,7 @@ const Team = () => {
     {
       name: "Riddesh Kankariya",
       role: "Mobile Developer",
-      bio: "Mobile app specialist with 8+ years experience. Published 20+ apps with millions of downloads.",
+      bio: "Mobile app specialist with 1.5+ years experience. Published 20+ apps with millions of downloads.",
       image: "https://avatars.githubusercontent.com/u/147300781?v=4",
       social: {
         linkedin: "#",
