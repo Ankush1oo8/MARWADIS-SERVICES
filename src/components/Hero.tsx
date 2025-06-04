@@ -1,11 +1,17 @@
 import { ArrowRight, Code, Smartphone, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 const Hero = () => {
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black">
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-50" style={{
-      backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-    }}></div>
+      <div
+        className="absolute inset-0 opacity-50"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+        }}
+      ></div>
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
@@ -20,13 +26,24 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <Button size="lg" className="bg-white text-black hover:bg-gray-200 text-lg px-8 py-4 group transition-all duration-300 hover:scale-105">
-              View Our Work 
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="lg" className="border-white hover:bg-white text-lg px-8 py-4 transition-all duration-300 hover:scale-105 text-zinc-950">
-              Start Your Project
-            </Button>
+            <Link href="#projects">
+              <Button
+                size="lg"
+                className="bg-white text-black hover:bg-gray-200 text-lg px-8 py-4 group transition-all duration-300 hover:scale-105"
+              >
+                View Our Work 
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link href="#contact">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-white hover:bg-white text-lg px-8 py-4 transition-all duration-300 hover:scale-105 text-zinc-950"
+              >
+                Start Your Project
+              </Button>
+            </Link>
           </div>
           
           {/* Feature Icons */}
@@ -52,6 +69,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;

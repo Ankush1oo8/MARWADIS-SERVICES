@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
   return (
-    <section className="py-24 bg-black">
+    <section id="contact" className="py-24 bg-black">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">

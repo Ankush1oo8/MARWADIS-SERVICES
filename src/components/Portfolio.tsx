@@ -33,7 +33,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="py-24 bg-black">
+    <section id="projects" className="py-24 bg-black">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
