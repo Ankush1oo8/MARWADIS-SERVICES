@@ -9,9 +9,9 @@ const Team = () => {
       bio: "2+ years building scalable web applications. Expert in React, Node.js, and cloud architecture.",
       image: "https://avatars.githubusercontent.com/u/154556772?v=4",
       social: {
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/ankush-chudiwal/",
         twitter: "#",
-        github: "#"
+        github: "https://github.com/ankush1oo8"
       }
     },
     {
@@ -20,20 +20,20 @@ const Team = () => {
       bio: "Mobile app specialist with 1.5+ years experience. Published 20+ apps with millions of downloads.",
       image: "https://avatars.githubusercontent.com/u/147300781?v=4",
       social: {
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/riddesh-kankariya/",
         twitter: "#",
-        github: "#"
+        github: "https://github.com/Riddesh12"
       }
     },
     {
-      name: "Sanyam Karariya",
+      name: "Sanyam Katariya",
       role: "DevOps & Cloud Engineer",
       bio: "Infrastructure expert specializing in AWS, Kubernetes, and CI/CD automation.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQEZ_M3GxIPilA/profile-displayphoto-shrink_200_200/B4DZQxoifzHMAY-/0/1735999499023?e=1754524800&v=beta&t=7SwO076WWYiV-nY8m5SIusMdMWWIomD5QEwkcOdjTpo",
       social: {
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/sanyam-katariya-01a681259/",
         twitter: "#",
-        github: "#"
+        github: "https://github.com/sanyamj894"
       }
     }
   ];
