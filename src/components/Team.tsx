@@ -1,5 +1,5 @@
 
-import { Linkedin, Twitter, Github } from "lucide-react";
+import { Linkedin, Github } from "lucide-react";
 
 const Team = () => {
   const teamMembers = [
@@ -10,18 +10,16 @@ const Team = () => {
       image: "https://avatars.githubusercontent.com/u/154556772?v=4",
       social: {
         linkedin: "https://www.linkedin.com/in/ankush-chudiwal/",
-        twitter: "#",
         github: "https://github.com/ankush1oo8"
       }
     },
     {
       name: "Riddesh Kankariya",
       role: "Mobile Developer",
-      bio: "Mobile app specialist with 1.5+ years experience. Published 20+ apps with millions of downloads.",
+      bio: "Mobile app specialist with 1.5+ years experience. Worked on more than 20 projects.",
       image: "https://avatars.githubusercontent.com/u/147300781?v=4",
       social: {
         linkedin: "https://www.linkedin.com/in/riddesh-kankariya/",
-        twitter: "#",
         github: "https://github.com/Riddesh12"
       }
     },
@@ -32,7 +30,6 @@ const Team = () => {
       image: "https://media.licdn.com/dms/image/v2/D4D03AQEZ_M3GxIPilA/profile-displayphoto-shrink_200_200/B4DZQxoifzHMAY-/0/1735999499023?e=1754524800&v=beta&t=7SwO076WWYiV-nY8m5SIusMdMWWIomD5QEwkcOdjTpo",
       social: {
         linkedin: "https://www.linkedin.com/in/sanyam-katariya-01a681259/",
-        twitter: "#",
         github: "https://github.com/sanyamj894"
       }
     }
@@ -82,12 +79,6 @@ const Team = () => {
                   className="text-gray-500 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"
                 >
                   <Linkedin className="h-5 w-5" />
-                </a>
-                <a 
-                  href={member.social.twitter} 
-                  className="text-gray-500 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"
-                >
-                  <Twitter className="h-5 w-5" />
                 </a>
                 <a 
                   href={member.social.github} 

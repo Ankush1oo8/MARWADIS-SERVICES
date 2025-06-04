@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -78,21 +77,48 @@ const Portfolio = () => {
                 </div>
                 
                 <div className="flex gap-3">
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
-                    className="border-gray-600 text-black hover:bg-white hover:text-black flex-1"
-                  >
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
-                  </Button>
-                  <Button 
-                    size="sm" 
-                    variant="ghost" 
-                    className="text-gray-400 hover:text-white"
-                  >
-                    <Github className="h-4 w-4" />
-                  </Button>
+                  {project.link !== "#" ? (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <Button 
+                        size="sm" 
+                        variant="outline" 
+                        className="border-gray-600 text-black hover:bg-white hover:text-black flex-1"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="border-gray-600 text-black hover:bg-white hover:text-black flex-1"
+                      disabled
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Work in Progress
+                    </Button>
+                  )}
+                  {project.github !== "#" ? (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Button 
+                        size="sm" 
+                        variant="ghost" 
+                        className="text-gray-400 hover:text-white"
+                      >
+                        <Github className="h-4 w-4" />
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button 
+                      size="sm" 
+                      variant="ghost" 
+                      className="text-gray-400 hover:text-white"
+                      disabled
+                    >
+                      <Github className="h-4 w-4" />
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
