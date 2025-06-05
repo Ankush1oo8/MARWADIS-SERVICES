@@ -57,7 +57,7 @@ const Hero = () => {
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
-            <a href="/contact">
+            <a href="#contact">
               <Button
                 variant="outline"
                 size="lg"
