@@ -129,7 +129,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-white font-medium">Email us</p>
-                    <p className="text-gray-400">hello@elitesoftware.dev</p>
+                    <p className="text-gray-400">marwaidiservices@outlook.com</p>
                   </div>
                 </div>
 
@@ -139,7 +139,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-white font-medium">Call us</p>
-                    <p className="text-gray-400">+1 (555) 123-4567</p>
+                    <p className="text-gray-400">+91 9552936422</p>
                   </div>
                 </div>
 
@@ -149,7 +149,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-white font-medium">Visit us</p>
-                    <p className="text-gray-400">San Francisco, CA</p>
+                    <p className="text-gray-400">Maharashtra, India</p>
                   </div>
                 </div>
               </div>
